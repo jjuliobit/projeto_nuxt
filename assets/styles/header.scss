@@ -1,7 +1,46 @@
-#btn-nav {
-    background: $primary;
+#nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: $header-height;
+    padding: $header-padding;
+    background-color: $primary-color;
+    color: #ffffff;
+    font-size: $header-font-size;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  
+
+    // Adicione o estilo das opções de menu
+    #navbar-nav {
+        display: flex;
+        list-style: none;
+        padding: 50px;
+  
+      #nav-item {
+        padding: $header-link-padding;
+        transition: color 0.3s ease;
+  
+        #nav-link {
+            color: #ffffff;
+            text-decoration: none;
+            background: $secondary-color;
+            padding: 0.5rem 1rem;
+            border-radius: 15px;
+            transition: background 0.3s ease;
+  
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+
 }
 
 .btn-nav {
-    background: $primary;
-}
+    background-color: $primary-color;
+}  
