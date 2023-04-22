@@ -1,24 +1,28 @@
+<template>
+<div>
+  <AppHeader />
+  <AppContent />
+  <AppFooter />
+</div>
+</template>
+
 <script>
-import AppHeader from '../components/AppHeader.vue';
-import AppFooter from '../components/AppFooter.vue';
-import AppContent from '../components/AppContent.vue';
+
+import AppHeader from '~/components/AppHeader.vue';
+import AppContent from '~/components/AppContent.vue';
+import AppFooter from '~/components/AppFooter.vue';
 
 
 export default {
+  layouts: {
+    name: 'Default',
+  },
   components: {
     AppHeader,
-    AppFooter,
-    AppContent
-}
+    AppContent,
+    AppFooter
+  }
 }
 </script>
-
-<template>
-  <div>
-    <AppHeader />
-    <AppFooter/>
-    <AppContent/>
-  </div>
-</template>
 
 

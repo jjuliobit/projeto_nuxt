@@ -1,24 +1,39 @@
 <template>
-    <v-app-bar id="nav-bar">
-            <v-container>
-                <div>
-                    <ul id="navbar-nav">
-                        <li id="nav-item">
-                            <a id="nav-link" href="#">LINK 1</a>
-                        </li>
-                        <li id="nav-item">
-                            <a id="nav-link" href="#">LINK 2</a>
-                        </li>
-                        <li id="nav-item">
-                            <a id="nav-link" href="#">LINK 3</a>
-                        </li>
-                    </ul>
-                </div>
-            </v-container>
-    </v-app-bar>
+    <div>
+        <v-navigation-drawer v-model="drawer" clipped :fixed="$vuetify.breakpoint.mdAndDown" app>
+        </v-navigation-drawer>
+        <v-app-bar clipped-left app :fixed="true">
+            <v-app-bar-nav-icon v-if="$vuetify.breakpoint.mdAndDown" @click="drawer = !drawer"></v-app-bar-nav-icon>
+            <v-toolbar-title class="headline text-uppercase">
+                <span>Logo</span>
+            </v-toolbar-title>
+            <v-spacer></v-spacer>
+            <v-menu left bottom>
+                <template v-slot:activator="{ on }">
+                    <v-btn icon v-on="on">
+                       <MenuIcon />
+                    </v-btn>
+                </template>
+                <v-list>
+                    <v-list-item @click="$vuetify.theme.dark = !$vuetify.theme.dark" v-model="success">
+                        <v-list-item-title>Dark Mode</v-list-item-title>
+                        <mdicon name="react" />
+                    </v-list-item>
+                </v-list>
+            </v-menu>
+        </v-app-bar>
+    </div>
 </template>
-
-
-<style lang="scss">
-@import '../assets/styles/header.scss';
-</style>
+<script>
+import MenuIcon from 'vue-material-design-icons/Menu.vue';
+export default {
+    name: "Default",
+    data: () => ({
+        drawer: null,
+        success: null
+    }),
+    components: {
+        MenuIcon,
+    }
+}
+</script>
