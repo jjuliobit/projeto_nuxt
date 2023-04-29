@@ -1,9 +1,9 @@
 <template>
-<div>
-  <AppHeader />
-  <AppContent />
-  <AppFooter />
-</div>
+  <div>
+    <AppHeader />
+    <AppContent />
+    <AppFooter />
+  </div>
 </template>
 
 <script>
@@ -22,6 +22,7 @@ export default {
     AppContent,
     AppFooter
   }
+
 }
 </script>
 

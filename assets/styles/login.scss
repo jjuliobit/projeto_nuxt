@@ -1,0 +1,67 @@
+.card-login__image {
+  background-image: url('../assets/images/azul.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.card-login__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .card {
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.603);
+    border: none;
+    border-radius: 15px;
+
+    .card-title {
+      text-align: center;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .form-group {
+      margin: 3rem;
+
+      .label-login {
+        font-weight: bold;
+      }
+
+      .input-login {
+        border-radius: 15px;
+        font-size: 23px;
+        margin-top: 15px;
+
+      }
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+  
+      .btn-login {
+        font-size: 1.25rem;
+        padding: 0.75rem 1.5rem;
+        background-color: #007bff;
+        color: white;
+        border-radius: 10px;
+        margin: 3rem auto;
+        display: block;
+    
+        &:hover {
+          color: black;
+        }
+      }
+    
+    }
+  }
+
+
+
+
+  
+  
+}
