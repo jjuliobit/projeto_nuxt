@@ -1,16 +1,3 @@
-// Ref: https://github.com/nuxt-community/vuetify-module#customvariables
-//
-// The variables you want to modify
-// $font-size-root: 20px;
+// text
 
-// Define as variáveis de cor
-$primary-color: #2c3e50;
-$secondary-color: #f39c12;
-
-
-// Define as variáveis para espaçamento e tamanho de fonte
-$header-height: 80px;
-$header-padding: 0 30px;
-$header-font-size: 18px;
-$header-link-padding: 0 20px;
-
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

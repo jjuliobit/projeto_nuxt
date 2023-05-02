@@ -1,0 +1,75 @@
+.footer-bg {
+    background-color: $primary;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  
+    .container {
+      .row {
+        justify-content: center;
+  
+        .col {
+          margin-bottom: 1rem;
+  
+          .text-h5 {
+            color: white;
+            margin-bottom: 0.5rem;
+          }
+
+          .text-p {
+            color: white;
+            margin-bottom: 0;
+          }
+  
+          .list-icons {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+  
+            .list-item {
+              margin-bottom: 0.5rem;
+  
+              .icons {
+                color: white;
+                text-decoration: none;
+  
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+          
+        }
+  
+        .col {
+          .list-icons {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+  
+            .list-item {
+              display: inline-block;
+              margin-right: 1rem;
+  
+              &:last-child {
+                margin-right: 0;
+              }
+  
+              .icons {
+                color: white;
+  
+                &:hover {
+                  color: $secondary;
+                }
+              }
+  
+              .mdi {
+                font-size: 2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  

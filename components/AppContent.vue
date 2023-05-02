@@ -1,12 +1,12 @@
 <template>
     <v-card :loading="loading" class="mx-auto my-12" max-width="374">
         <template slot="progress">
-            <v-progress-linear color="deep-purple" height="10" indeterminate></v-progress-linear>
+            <v-progress-linear class="bg-progress" height="10" indeterminate></v-progress-linear>
         </template>
 
         <v-img height="250" src="https://cdn.vuetifyjs.com/images/cards/cooking.png"></v-img>
 
-        <v-card-title>Cafe Badilico</v-card-title>
+        <v-card-title class="card-title">Cafe Badilico</v-card-title>
 
         <v-card-text>
             <v-row align="center" class="mx-0">
@@ -26,7 +26,7 @@
 
         <v-divider class="mx-4"></v-divider>
 
-        <v-card-title>Tonight's availability</v-card-title>
+        <v-card-title class="card-tilte">Tonight's availability</v-card-title>
 
         <v-card-text>
             <v-chip-group v-model="selection" active-class="deep-purple accent-4 white--text" column>
@@ -41,7 +41,7 @@
         </v-card-text>
 
         <v-card-actions>
-            <v-btn color="deep-purple lighten-2" text @click="reserve">
+            <v-btn class="btn btn-reserve" text @click="reserve">
                 Reserve
             </v-btn>
         </v-card-actions>
@@ -64,3 +64,8 @@ export default {
     },
 }
 </script>
+
+<style lang="scss">
+@import '../assets/styles/content.scss';
+
+</style>
